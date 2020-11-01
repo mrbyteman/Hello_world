@@ -2,11 +2,11 @@ n = input("Enter a name: ")
 
 def remove_duplicate_letters(name):
     list = []
-    #if(name.islower() and name.isalpha()):
+    
     for letter in name:
-            if not(letter >= 'a' and letter <= 'z'): 
+            if not(letter >= 'a' and letter <= 'z'): #verification (between a-z)
                 quit()
-
+                
             else:
                 if len(list) == 0:
                     list.append(letter)                                            
